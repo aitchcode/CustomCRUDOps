@@ -1,0 +1,21 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model CustomCRUDOps.Models.Employee
+
+@{
+    ViewData["Title"] = "Delete Employee";
+}
+
+<h2 class="mb-3">Delete Employee</h2>
+
+<label>Name: @Model</label><br/>
+<label>DOB: @Model.DOB</label><br/>
+<label>Email Address: @Model.EmailAddress</label><br/>
+<label>Home Address: @Model.HomeAddress</label><br/>
+
+<form method="post">
+    <input type="hidden" value="@Model.Id" name="id"/>
+    <input type="submit" value="Delete" class="btn btn-primary mt-3" />
+</form>

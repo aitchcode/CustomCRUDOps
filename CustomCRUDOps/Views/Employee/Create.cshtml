@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Add Employee";
+}
+
+<h2>Add Employee</h2>
+<form method="post" asp-action="Update">
+    <div>
+        <label>Name</label>
+        <input type="text" class="form-control" name="name" required />
+    </div>
+    <div>
+        <label>DOB</label>
+        <input type="date" class="form-control" name="dob" required />
+    </div>
+    <div>
+        <label>Email Address</label>
+        <input type="email" class="form-control" name="email" required />
+    </div>
+    <div>
+        <label>Home Address</label>
+        <textarea class="form-control" name="address" required></textarea>
+    </div>
+    <input type="submit" value="Save" class="btn btn-primary mt-3" />
+</form>
